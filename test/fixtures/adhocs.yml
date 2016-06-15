@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  orig: MyString
+  depart: MyString
+  dest: MyString
+  arrive: MyString
+  type_of_freight: MyString
+  reason: MyString
+
+two:
+  orig: MyString
+  depart: MyString
+  dest: MyString
+  arrive: MyString
+  type_of_freight: MyString
+  reason: MyString

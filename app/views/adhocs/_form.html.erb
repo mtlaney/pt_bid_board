@@ -1,0 +1,41 @@
+<%= form_for(@adhoc) do |f| %>
+  <% if @adhoc.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@adhoc.errors.count, "error") %> prohibited this adhoc from being saved:</h2>
+
+      <ul>
+      <% @adhoc.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :orig %><br>
+    <%= f.text_field :orig %>
+  </div>
+  <div class="field">
+    <%= f.label :depart %><br>
+    <%= f.text_field :depart %>
+  </div>
+  <div class="field">
+    <%= f.label :dest %><br>
+    <%= f.text_field :dest %>
+  </div>
+  <div class="field">
+    <%= f.label :arrive %><br>
+    <%= f.text_field :arrive %>
+  </div>
+  <div class="field">
+    <%= f.label :type_of_freight %><br>
+    <%= f.text_field :type_of_freight %>
+  </div>
+  <div class="field">
+    <%= f.label :reason %><br>
+    <%= f.text_field :reason %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

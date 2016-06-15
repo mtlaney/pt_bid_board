@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Orig:</strong>
+  <%= @adhoc.orig %>
+</p>
+
+<p>
+  <strong>Depart:</strong>
+  <%= @adhoc.depart %>
+</p>
+
+<p>
+  <strong>Dest:</strong>
+  <%= @adhoc.dest %>
+</p>
+
+<p>
+  <strong>Arrive:</strong>
+  <%= @adhoc.arrive %>
+</p>
+
+<p>
+  <strong>Type of freight:</strong>
+  <%= @adhoc.type_of_freight %>
+</p>
+
+<p>
+  <strong>Reason:</strong>
+  <%= @adhoc.reason %>
+</p>
+
+<%= link_to 'Edit', edit_adhoc_path(@adhoc) %> |
+<%= link_to 'Back', adhocs_path %>
