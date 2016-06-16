@@ -1,28 +1,17 @@
-== README
+-- PT Bid Board  
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This will be a bid board that will list lanes currently open to bid on.
 
-Things you may want to cover:
+External customers will be able to bid on these lanes (privately), and we will be able to award based off of price / service / and past performance.
 
-* Ruby version
+It shall include authorization and authentication for internal and external customers.
 
-* System dependencies
+It will include a bid acceptance system that will be pushed to DB2, and all parties will be notified of the acceptance via sendgrid or an alternative.
 
-* Configuration
+Will also include accept/deny(with comments) for Admins when viewing the open bids. 
 
-* Database creation
+Only LH will be able to request a new lane to be put on, and will pull from table 36 to do so. 
 
-* Database initialization
+All data will be stored via SQlite => DB2 servers. Including unfilled lanes, denied bids, awarded bids, and deleted items. 
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Gems planned to be used. Devise / Cocoon / Sendgrid.
