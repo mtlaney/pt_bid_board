@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160615021430) do
+ActiveRecord::Schema.define(version: 20160616034135) do
 
   create_table "adhocs", force: :cascade do |t|
     t.string   "orig"
@@ -22,12 +22,13 @@ ActiveRecord::Schema.define(version: 20160615021430) do
     t.string   "reason"
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
+    t.integer  "bid_id"
   end
 
   create_table "bids", force: :cascade do |t|
     t.integer  "price"
     t.integer  "miles"
-    t.integer  "adhocs_id"
+    t.integer  "adhoc_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

@@ -1,0 +1,15 @@
+<%= form_for([@adhoc, @adhoc.bids.build]) do |f| %>
+  <p>
+    <%= f.label :price %><br>
+    <%= f.text_field :price %>
+  </p>
+
+  <p>
+    <%= f.label :miles %><br>
+    <%= f.text_field :miles %>
+  </p>
+
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>

@@ -1,3 +1,3 @@
 class Bid < ActiveRecord::Base
-  belongs_to :adhocs
+  belongs_to :adhoc
 end

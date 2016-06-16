@@ -24,9 +24,10 @@
         <td><%= adhoc.arrive %></td>
         <td><%= adhoc.type_of_freight %></td>
         <td><%= adhoc.reason %></td>
-        <td><%= link_to 'Show', adhoc %></td>
-        <td><%= link_to 'Edit', edit_adhoc_path(adhoc) %></td>
+        <td><%= link_to 'Show', adhoc %> |</td>
+        <td><%= link_to 'Edit', edit_adhoc_path(adhoc) %> |</td>
         <td><%= link_to 'Destroy', adhoc, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+
       </tr>
     <% end %>
   </tbody>

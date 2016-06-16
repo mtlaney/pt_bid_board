@@ -3,7 +3,7 @@ class CreateBids < ActiveRecord::Migration
     create_table :bids do |t|
       t.integer :price
       t.integer :miles
-      t.belongs_to :adhocs
+      t.belongs_to :adhoc
 
       t.timestamps null: false
     end

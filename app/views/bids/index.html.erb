@@ -1,0 +1,15 @@
+<table>
+  <tbody>
+      <% @bids.each do |bid| %>
+        <tr>
+          <td><%= bid.adhoc_id %></td>
+          <td><%= bid.price %></td>
+          <td><%= bid.miles %></td>
+        </tr>
+
+
+      <% end %>
+    </tbody>
+</table>
+
+    <%= link_to "Home", root_path %>
